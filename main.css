@@ -1,4 +1,81 @@
-body{
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: turquoise;
+    border-radius: 8px;
+    margin-bottom: 24px;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.square:hover{
+    transform: scale(1.4);
+}
+
+.square.has-transition{
+    transition: transform 150ms ease-in-out;
+}
+
+.square span{
+    font-size: 1.5em;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    display: grid;
+    place-items: center;
+}
+
+
+.rectangle {
+    width: 150px;
+    max-height: 100px;
+    background-color: lightcoral;
+    border-radius: 8px;
+    text-align: center;
+    padding: 8px;
+    margin-bottom: 4px;
+  
+    transition-property: width;
+    transition-duration: 1s;
+  }
+  
+  .rectangle.ttf-linear {
+    transition-timing-function: linear;
+  }
+  
+  .rectangle.ttf-ease {
+    transition-timing-function: ease;
+  }
+  
+  .rectangle.ttf-ease-in {
+    transition-timing-function: ease-in;
+  }
+  
+  .rectangle.ttf-ease-out {
+    transition-timing-function: ease-out;
+  }
+  
+  .rectangle.ttf-ease-in-out {
+    transition-timing-function: ease-in-out;
+  }
+  
+  .rectangle.ttf-steps {
+    transition-timing-function: steps(3);
+  }
+  
+  .rectangle.ttf-cubic {
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
+  
+  .rectangle:is(:hover, :focus) {
+    width: 50%;
+  }
