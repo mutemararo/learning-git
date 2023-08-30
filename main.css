@@ -68,10 +68,6 @@ body{
     transition-timing-function: ease-in-out;
   }
   
-  .rectangle.ttf-steps {
-    transition-timing-function: steps(3);
-  }
-  
   .rectangle.ttf-cubic {
     transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
   }
